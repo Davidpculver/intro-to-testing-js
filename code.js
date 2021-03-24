@@ -13,5 +13,5 @@ function addOne(input){
 }
 
 function sayHello() {
-    
+    return "";
 }
