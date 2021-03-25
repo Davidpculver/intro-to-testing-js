@@ -27,3 +27,33 @@ function isFive(input) {
 function isEven(input) {
     return parseFloat(input) % 2 === 0;
 }
+
+function isVowel(letter) {
+    if (typeof letter === "string"){
+    return letter.toLowerCase() === "a" || letter.toLowerCase() === "e" || letter.toLowerCase() === "i" || letter.toLowerCase() === "o" || letter.toLowerCase() === "u";
+    } else {
+        return false;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
