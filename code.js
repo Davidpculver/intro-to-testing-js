@@ -13,5 +13,10 @@ function addOne(input){
 }
 
 function sayHello(input) {
-    return "Hello, " + input + "!";
+    if(typeof input === "number" || input === ""){
+        return "Please enter a valid name.";
+    } else {
+        return (input === undefined || input === true || input === false) ? "Hello, World!" : "Hello, " + input + "!";
+    }
 }
+

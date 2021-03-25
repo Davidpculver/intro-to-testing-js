@@ -66,6 +66,24 @@ describe("sayHello", function () {
     it('should return the string "Hello, Pat!', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('should return the string "Hello, World!', function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it('should return "please enter a valid name"', function () {
+        expect(sayHello(5)).toBe("Please enter a valid name.")
+    });
+    it('should return "please enter a valid name"', function () {
+        expect(sayHello(2.5)).toBe("Please enter a valid name.")
+    });
+    it('should return "please enter a valid name"', function () {
+        expect(sayHello('')).toBe("Please enter a valid name.")
+    });
 })
 
 
