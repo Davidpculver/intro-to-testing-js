@@ -164,6 +164,29 @@ describe("isVowel", function (){
     });
 })
 
+describe("add", function () {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe("function");
+    });
+    it('should always return a number', function () {
+        expect(typeof add()).toBe("number");
+    });
+    it('should return 5 when 2 and 3 are input', function () {
+        expect(add(2,3)).toBe(5);
+    });
+    it('should return -12 when -3 and -9 are input', function () {
+        expect(add(-3,-9)).toBe(12);
+    });
+    it('should return 6 when the strings "-4" and "10" are input', function () {
+        expect(add("-4","10")).toBe(6);
+    });
+    it('should return NaN when "banana" and "split" are input', function () {
+        expect(Number.isNaN(add("banana", "split"))).toBe(true);
+    });
+    it('should return NaN when 2 and "apples" are input', function () {
+        expect(Number.isNaN(add(2, "apples"))).toBe(true);
+    });
+})
 
 
 

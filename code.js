@@ -36,8 +36,9 @@ function isVowel(letter) {
     }
 }
 
-
-
+function add(x, y){
+    return parseFloat(x) + parseFloat(y);
+}
 
 
 
