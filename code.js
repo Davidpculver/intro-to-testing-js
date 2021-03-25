@@ -20,3 +20,6 @@ function sayHello(input) {
     }
 }
 
+function isFive(input) {
+    return (parseFloat(input) === 5) ? true : Boolean();
+}
