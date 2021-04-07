@@ -175,7 +175,7 @@ describe("add", function () {
         expect(add(2,3)).toBe(5);
     });
     it('should return -12 when -3 and -9 are input', function () {
-        expect(add(-3,-9)).toBe(12);
+        expect(add(-3,-9)).toBe(-12);
     });
     it('should return 6 when the strings "-4" and "10" are input', function () {
         expect(add("-4","10")).toBe(6);
